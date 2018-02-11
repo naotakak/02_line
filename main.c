@@ -17,18 +17,22 @@ int main() {
 
   clear_screen(s);
 
-  for (int i = 0; i < 45; i ++) {
-    draw_line(0, 0, 250, i * 5, s, c);
-    draw_line(250, 500, 500, i * 5, s, c);
-  }
-  c.red = 128;
-  c.green = 128;
-  c.blue = 128;
-  for (int i = 0; i < 44; i ++) {
-    draw_line(500, 0, 250, i * 5, s, c);
-    draw_line(250, 500, 0, i * 5, s, c);
-  }
-
+  draw_line(250, 250, 350, 250, s, c);
+  draw_line(250, 250, 350, 300, s, c);
+  draw_line(250, 250, 350, 350, s, c);
+  draw_line(250, 250, 300, 350, s, c);
+  draw_line(250, 250, 250, 350, s, c);
+  draw_line(250, 250, 200, 350, s, c);
+  draw_line(250, 250, 150, 350, s, c);
+  draw_line(250, 250, 150, 300, s, c);
+  draw_line(250, 250, 150, 250, s, c);
+  draw_line(250, 250, 150, 200, s, c);
+  draw_line(250, 250, 150, 150, s, c);
+  draw_line(250, 250, 200, 150, s, c);
+  draw_line(250, 250, 250, 150, s, c);
+  draw_line(250, 250, 300, 150, s, c);
+  draw_line(250, 250, 350, 150, s, c);
+  draw_line(250, 250, 350, 200, s, c);
 
   /***
   //triangle
