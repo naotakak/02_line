@@ -17,6 +17,20 @@ int main() {
 
   clear_screen(s);
 
+  for (int i = 0; i < 45; i ++) {
+    draw_line(0, 0, 250, i * 5, s, c);
+    draw_line(250, 500, 500, i * 5, s, c);
+  }
+  c.red = 128;
+  c.green = 128;
+  c.blue = 128;
+  for (int i = 0; i < 44; i ++) {
+    draw_line(500, 0, 250, i * 5, s, c);
+    draw_line(250, 500, 0, i * 5, s, c);
+  }
+
+
+  /***
   //triangle
   draw_line(200, 200, 300, 200, s, c);
   draw_line(250, 300, 300, 200, s, c);
@@ -67,7 +81,7 @@ int main() {
   for (int i = 0; i < 5; i ++) {
     draw_line(285 + i, 235 - i, 500, 200 - i, s, c);
   }
-
+  ***/
   display(s);
   save_extension(s, "lines.png");
 }
